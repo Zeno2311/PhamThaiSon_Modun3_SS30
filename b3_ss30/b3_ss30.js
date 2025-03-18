@@ -8,14 +8,20 @@ let menu = `
 2. Thêm điện thoại mới vào cửa hàng
 3. Tìm kiếm điện thoại theo tên hoặc id
 4. Mua điện thoại
-5. Thoát chương trình
+5. Thanh toán tất cả điện thoại trong giỏ hàng (Thông báo thanh toán thành công, và xóa toàn bộ giỏ hàng)
+6. Sắp xếp điện thoại theo giá:
+    a.Tăng dần
+    b.Giảm dần
+7. Hiển thị tổng số tiền của các điện thoại trong kho
+8. Hiển thị tổng số lượng điện thoại theo từng hàng (VD: samsung - 5,iphone - 3,...)
+9. Thoát chương trình
 ---------------------------------------------------------------
 ~ Lựa chọn thao tác của bạn:
 ---------------------------------------------------------------
 `;
 
 let choice;
-while (choice !== 5) {
+while (choice !== 9) {
     choice = +prompt(menu);
     switch (choice) {
         case 1: // Hiển thị theo hãng
@@ -30,7 +36,7 @@ while (choice !== 5) {
         case 4: // Mua điện thoại
             purchasePhone();
             break;
-        case 5: // Thoát
+        case 9: // Thoát
             alert("Cảm ơn bạn đã sử dụng chương trình!");
             break;
         default:
